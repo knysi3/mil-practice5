@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数の宣言・引数</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <button id="button">クリック</button>
+    <script>
+
+        $('#button').on('click', function () {
+            alert('おはよう！')
+        })
+
+        function judge(my, ans) {
+            if (my.length != 3) {
+                return 'error';
+            }
+
+            let i = 0;
+            let rsl = [];
+            for (const elem of my) {
+                rsl.push(my[i] == ans[i]);
+                console.log(my[i] = ans[i]);
+                i++;
+            }
+            return rsl;
+        }
+
+        // 結果表示
+        let my = [1, 2] // 選択問題のユーザ解答
+        let ans = [1, 2, 3] // 選択問題の解答
+        let result = judge(my, ans)
+        console.log(result) // [true, true, true]
+
+
+    </script>
+</body>
+
+</html>

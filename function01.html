@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数の宣言・引数</title>
+</head>
+
+<body>
+    <script>
+        // 挨拶その1
+        console.log('こんにちは');
+        console.log('いい天気ですね');
+
+        // 挨拶その2
+        console.log('こんにちは');
+        console.log('いい天気ですね');
+
+        // 初期挨拶関数
+        function greet() {
+            console.log('こんにちは');
+            console.log('いい天気ですね');
+        }
+
+        greet();
+
+        // 引数つき挨拶関数
+
+        // 演習: 複数の引数を取得して表示する
+        // 演習: 足し算をする関数 add() を作成する
+        // add(2, 3) -> 5
+        function calc(a, b) {
+            let result = [];
+            result.push(a + b);
+            result.push(a - b);
+            result.push(a * b);
+            result.push(a / b);
+            return result;
+        }
+        console.log(calc(2, 3));
+
+
+
+    </script>
+</body>
+
+</html>
